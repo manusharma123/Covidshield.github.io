@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<head>
+   <meta charset="utf-8">
+   <title>Responsive Navigation Bar</title>
+   <link rel="stylesheet" href="index.css">
+   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="background-image: url('images/200309_d_hn545_003-15738.jpg'); background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;">
+   <nav>
+      <ul>
+         <li class="logo">Covid App</li>
+         <li class="items"><a href="#">Home</a></li>
+         <li class="items"><a href="about us.html">About us</a></li>
+         <li class="items"><a href="contact us.html">Contact us</a></li>
+         <li class="items"><a href="user/userreg.php">Registration</a></li>
+         <li class="items"><a href="user/userlogin.php">Login</a></li>
+         
+         <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+      </ul>
+   </nav>
+   <script>
+      $(document).ready(function(){
+        $('.btn').click(function(){
+          $('.items').toggleClass("show");
+          $('ul li').toggleClass("hide");
+        });
+      });
+   </script>
+</body>
+</html>
